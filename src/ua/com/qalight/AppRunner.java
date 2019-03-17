@@ -20,9 +20,7 @@ public class AppRunner {
 			Map<String, Double> currencyMap = FileManager.readInputCurrencyValues();
 			List<CurrencyEntity> currencyEntities = CurrencyMapper.getFromMap(currencyMap);
 
-			for (CurrencyEntity currencyEntity : currencyEntities) {
-				FileManager.writeCurrencyValuesToFile(currencyEntity);
-			}
+			FileManager.writeCurrencyValuesToFile(currencyEntities);
 
 			try {
 				Thread.sleep(1000*60*60*hours);

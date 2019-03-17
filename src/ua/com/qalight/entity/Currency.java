@@ -4,7 +4,7 @@ public enum Currency {
 
 	USD("$", "USD", 840),
 	EUR("€", "EUR", 978),
-	RUB("₽", "RUB", 643);
+	RUB("P", "RUB", 643);
 
 	private final String symbol;
 	private final String shortName;
